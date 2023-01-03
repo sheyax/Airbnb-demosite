@@ -8,7 +8,7 @@ import responseCard from '../responseCard.json'
 import MediumCard from './MediumCard';
 import LargeCard from './LargeCard';
 import Footer from './Footer';
-export default function HomePage({exploreData, cardsData}) {
+export default function HomePage() {
 
  console.log()
   return (
@@ -57,20 +57,20 @@ export default function HomePage({exploreData, cardsData}) {
     </div>
   );
 }
-export async function getStaticProps(){
-const exploreData = await  fetch('https://links.papareact.com/pyp')
-.then(
-  (res)=> res.json()
-);
+// export async function getStaticProps(){
+// const exploreData = await  fetch('https://links.papareact.com/pyp')
+// .then(
+//   (res)=> res.json()
+// );
 
-//console.log(exploreData)
+// //console.log(exploreData)
 
 
-const cardsData= await fetch('https://links.papareact.com/zp1').then(res => res.json())
-return {
-  props:{
-    exploreData: exploreData,
-    cardsData: cardsData
-  }
-}
-}
+// const cardsData= await fetch('https://links.papareact.com/zp1').then(res => res.json())
+// return {
+//   props:{
+//     exploreData: exploreData,
+//     cardsData: cardsData
+//   }
+// }
+// }
