@@ -7,15 +7,16 @@ import responseSearch from '../../responseSearch.json'
 import InfoCard from '../InfoCard';
 import Map from '../Map';
 
-type NameProps ={
-    // params: { name: string }; // cannot require should be optional
-    params?: { name: string };
-    // searchParams: any; // cannot require should be optional
-    searchParams?: any;
-  }
 
 
-export default function Search({params, searchParams}: NameProps) {
+
+export default function Search({
+    params,
+    searchParams,
+  }: {
+    params: { slug: string };
+    searchParams?: { [key: string]: string | string[] | undefined };
+  }) {
   
     const {location, startDate, endDate, numberOfGuests}= searchParams;
    // console.log(responseSearch)
