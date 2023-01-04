@@ -9,7 +9,7 @@ import Map from '../Map';
 
 
 
-export default function Search({params, searchParams}) {
+export default function Search({params: any, searchParams: any}) {
   
     const {location, startDate, endDate, numberOfGuests}= searchParams;
    // console.log(responseSearch)
