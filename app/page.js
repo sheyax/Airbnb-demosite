@@ -8,13 +8,15 @@ import responseCard from '../responseCard.json'
 import MediumCard from './MediumCard';
 import LargeCard from './LargeCard';
 import Footer from './Footer';
-export default function HomePage() {
+export default async function HomePage() {
 
- console.log()
+
+
+
   return (
     <div>
+     {/* <Header/> */}
      <Header/>
-
      <Banner/>
 
      <main className="max-w-7xl mx-auto px-8 sm:px-16  ">
@@ -51,9 +53,7 @@ export default function HomePage() {
       buttonText='Get Inspired'/>
      </main>
 
-     <footer>
-      <Footer/>
-     </footer>
+     
     </div>
   );
 }
@@ -74,3 +74,6 @@ export default function HomePage() {
 //   }
 // }
 // }
+
+
+
