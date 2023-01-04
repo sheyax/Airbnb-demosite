@@ -5,6 +5,7 @@ import {format} from "date-fns"
 import Header from '../Header';
 import responseSearch from '../../responseSearch.json'
 import InfoCard from '../InfoCard';
+import Map from '../Map';
 
 
 
@@ -59,6 +60,10 @@ export default function Search({params, searchParams}) {
 
 </div>
            
+        </section>
+
+        <section className='hidden xl:inline-flex xl:min-w-[600px]'>
+            <Map searchResult={responseSearch}/>
         </section>
     </main>
     </div>
